@@ -1,0 +1,91 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+double multiplication(double a, double b) //fonction multiplication
+{
+    double valeurMultiplication;
+    valeurMultiplication = a*b;
+    return valeurMultiplication; //on retourne le resultat hors de la fonction
+}
+
+double division(double a, double b) //fonction division
+{
+    int valeurDivision;
+    valeurDivision = a/b;
+    return valeurDivision; //on retourne le resultat hors de la fonction
+
+double addition(double a, double b) //fonction addition
+{
+    int valeurAddition;
+    valeurAddition = a+b;
+    return valeurAddition; //on retourne le resultat hors de la fonction
+}
+
+double soustraction(double a, double b) //fonction soustraction
+{
+    int valeurSoustraction;
+    valeurSoustraction = a-b;
+    return valeurSoustraction; //on retourne le resultat hors de la fonction
+}
+
+
+int main () {
+
+unsigned int finDuProgramme = 1;
+while (finDuProgramme = 1) { //boucle de fin de programme ou  de recommencement
+cout << "faites un choix : 1. multiplication  2.division  3.addition  4.soustraction" << endl;
+
+int resultatChoix(0);
+cin >> resultatChoix;
+
+switch (resultatChoix) //Different choix disponible pour l'utilisateur par la varible resultat Choix
+{
+case 1:
+    cout << "la multiplication" << endl;
+    cout << "saississez deux valeurs, l'une apres l'autre" << endl;
+    double valeur1, valeur2, resultat;
+    cin >> valeur1;
+    cin >> valeur2;
+    resultat = multiplication(valeur1, valeur2); //On multiplie les valeurs saisie par l'utilisateur
+    cout << resultat << endl; //on retourne le resultat
+    break;
+case 2:
+    cout << "2. division" << endl;
+    cout << "saississez deux valeurs, l'une apres l'autre" << endl;
+    double Valeur1, Valeur2, Resultat;
+    cin >> valeur1;
+    cin >> valeur2;
+    Resultat = division(Valeur1, Valeur2); //On divise les valeurs saisie par l'utilisateur
+    cout << Resultat << endl; //on retourne le resultat
+    break;
+case 3:
+    cout << "3. addition" << endl;
+    cout << "saississez deux valeurs, l'une apres l'autre" << endl;
+    double Valeur1_1, Valeur1_2, resultat_1;
+    cin >> Valeur1_1;
+    cin >> Valeur1_2;
+    resultat_1 = addition(Valeur1_1, Valeur1_2); //On additionne les valeurs saisie par l'utilisateur
+    cout << resultat_1 << endl; //on retourne le resultat
+    break;
+case 4:
+    cout << "4.soustraction" << endl;
+   cout << "saississez deux valeurs, l'une apres l'autre" << endl;
+    double Valeur1_3, Valeur1_4, Resultat_1;
+    cin >> Valeur1_3;
+    cin >> Valeur1_4;
+    Resultat_1 = soustraction(Valeur1_3, Valeur1_4); //On soustraie les valeurs saisie par l'utilisateur
+    cout << Resultat_1 << endl; //on retourne le resultat
+    break;
+}
+
+cout << "voulez-vous reessayer ?  1.Oui  2.Non" << endl;
+cin >> finDuProgramme; // Si l'utulisateur repond oui il revient au debut de la boucle while, dans le cas contraire le programme continu
+
+}
+
+     cout << "Merci et à la prochaine !" << endl;
+return 0;
+}
